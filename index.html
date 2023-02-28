@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="style.css">
+  <title>CMG Web Site</title>
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+</head>
+<body>
+<header>
+  <div class="logo">
+    <a href="#"><img src="imagenes/logocmg.png" alt=""></a>  
+  </div>
+  <input type="checkbox" id="nav-toggle" class="nav-toggle">
+  <nav>
+    <ul>
+      <li><a href="#servicios" onclick="NoShow()">Servicios que brindamos</a></li>
+      <li><a href="#about-us">Sobre nosotros</a></li>      
+      <li><a href="#clientes">Clientes</a></li>
+      <li><a href="#email">Contacto</a></li>
+    </ul>
+  </nav>
+  <label for="nav-toggle" class="nav-toggle-label">
+    <span></span>
+  </label>
+</header>
+
+<section id="principal" class="banner">
+  <div class="banner-contenido">
+      <h1>Líderes en software para industrias</h1>
+      <h2>Con mas de 40 años de experiencia</h2>
+      <a class="banner-link" href="#email">CONTACTANOS</a>
+  </div>
+</section>
+
+<section id="servicios" class="servicios">  
+    <div class="titulo">
+      <h1>Servicios que brindamos</h1>
+    </div>
+    <div class="tarjetas-container">
+      <div class="tarjeta">
+        <span>
+          <img class="tarjeta-img" src="./imagenes/pc.png" alt="">
+          <h2>Aplicaciones Web</h2>
+        </span>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam sint, nobis nihil atque id in possimus illo fugit ipsam vel quod, aperiam quas quisquam nulla temporibus at. Dolores, reiciendis iusto.
+        </p>
+      </div>
+      <div class="tarjeta">
+        <span>
+          <img class="tarjeta-img" src="./imagenes/mobile.png" alt="">
+          <h2>Aplicaciones Mobile</h2>
+        </span>      
+        <p>Nuestras aplicaciones mobile se desarrollan con el objetivo de facilitar el manejo de procesos de la productividad, almacenamiento, control, etcétera. Incluso trabajando de manera offline.</p>
+      </div>
+      <div class="tarjeta">
+        <span>
+          <img class="tarjeta-img" src="./imagenes/gestion-red.png" alt="">
+          <h2>Gestión de red</h2>
+        </span>
+        <p>Realizamos actividades en cuanto a la seguridad de sus datos protegiendo así los importantes activos intangibles tales como datos de sus clientes, cuentas por cobrar, existencias, etcétera.</p>
+      </div>    
+    </div>
+</section>
+
+<section id="about-us" class="about-us">
+  <div class="container">
+    <div class="about-us-text">
+      <h1>Sobre nosotros</h1>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui commodi neque architecto iste assumenda accusantium vero aperiam, nihil laboriosam. Ratione nobis veritatis delectus earum, officia inventore nihil laborum laboriosam sapiente!
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui commodi neque architecto iste assumenda accusantium vero aperiam, nihil laboriosam. Ratione nobis veritatis delectus earum, officia inventore nihil laborum laboriosam sapiente!
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui commodi neque architecto iste assumenda accusantium vero aperiam, nihil laboriosam. Ratione nobis veritatis delectus earum, officia inventore nihil laborum laboriosam sapiente!</p>
+    </div>
+    <div class="about-us-img">
+      <img src="./imagenes/developer.png" alt="">
+    </div>
+</section>
+
+<section id="clientes" class="clientes"> 
+    <div class="titulo">
+      <h1>Empresas que confian en nosotros</h1>
+    </div>
+    <div class="carrusel">
+      <div class="carrusel-items">
+        <div class="carrusel-item">
+          <a href="https://www.agrometal.com/?gclid=EAIaIQobChMI_Yb_payd_QIVE2GRCh2ubwwOEAAYASAAEgJGsvD_BwE" target="_blank"><img src="./imagenes/clienteAGROMETAL.png" alt=""></a> 
+        </div>
+        <div class="carrusel-item">
+          <a href="https://apache.com.ar/" target="_blank"><img src="./imagenes/clienteAPACHE.png" alt=""></a>
+        </div>
+        <div class="carrusel-item">
+          <a href="https://arcore.com/" target="_blank"><img src="./imagenes/clienteARCORE.png" alt=""></a>
+        </div>
+        <div class="carrusel-item">
+          <a href="https://fapersa.com//" target="_blank"><img src="./imagenes/clienteFAPERSA.png" alt=""></a>
+        </div>
+        <div class="carrusel-item">
+          <a href="https://www.cfsf2.org.ar/" target="_blank"><img src="./imagenes/clienteCOLEGIO.png" alt=""></a>
+        </div>
+        <div class="carrusel-item">
+          <a href="https://www.cfsf2.org.ar/" target="_blank"></a><img src="./imagenes/clienteGERDAU.png" alt=""></a>
+        </div>
+        <div class="carrusel-item">
+          <a href="http://www.sofama.com.ar/" target="_blank"><img src="./imagenes/clienteSOFAMA.png" alt=""></a>
+        </div>
+        <div class="carrusel-item">
+          <a href="https://www.cajaforense.com/" target="_blank"><img src="./imagenes/clienteCAJAFORENSE.png" alt=""></a>
+        </div>
+        <div class="carrusel-item">
+          <a href="https://www.youtube.com/user/elseisbariloche" target="_blank"><img src="./imagenes/clienteCANAL6.png" alt=""></a>
+        </div>
+        <div class="carrusel-item">
+          <a href="https://www.grupotelevisionlitoral.com/" target="_blank"><img src="./imagenes/clienteTVLITORAL.png" alt=""></a>
+        </div>
+        <div class="carrusel-item">
+          <a href="https://cafma.org.ar/empresas/101/materfer" target="_blank"><img src="./imagenes/clienteMATERFER.png" alt=""></a>
+        </div>
+        <div class="carrusel-item">
+          <a href="https://dalagi.com.ar/" target="_blank"><img src="./imagenes/clienteDALAGI.png" alt=""></a>
+        </div>
+        <div class="carrusel-item">
+          <a href="https://www.comofrasrl.com.ar/" target="_blank"><img src="./imagenes/clienteCOMOFRA.png" alt=""></a>
+        </div>
+        <div class="carrusel-item">
+          <a href="https://www.dascanio.com.ar/empresa/" target="_blank"><img src="./imagenes/clienteDASCANIO.png" alt=""></a>
+        </div>
+        <div class="carrusel-item">
+          <a href="https://www.francofabrilsa.com.ar/" target="_blank"><img src="./imagenes/clienteFRANCOFABRIL.png" alt=""></a>
+        </div>
+        <div class="carrusel-item">
+          <a href="https://www.grupoblanco.com.ar/" target="_blank"><img src="./imagenes/clienteGRUPOBLANCO.png" alt=""></a>
+        </div>
+        <div class="carrusel-item">
+          <a href="https://www.fulcrum.com.ar/" target="_blank"><img src="./imagenes/clienteFULCRUM.png" alt=""></a>
+        </div>
+        <div class="carrusel-item">
+          <a href="https://www.gherbezza.com/" target="_blank"><img src="./imagenes/clienteGHERBEZZA.png" alt=""></a>
+        </div>
+        <div class="carrusel-item">
+          <a href="https://www.cba24n.com.ar/canal-10-cordoba" target="_blank"><img src="./imagenes/clienteCANAL10CBA.png" alt=""></a>
+        </div>
+        <div class="carrusel-item">
+          <a href=" https://www.dixilina.com.ar/" target="_blank"><img src="./imagenes/clienteDIXILINA.png" alt="Dixilina"></a>
+        </div>
+       
+
+      </div>
+    </div>
+</section>
+
+<section class="tecnologias">
+  <div class="container">     
+    <div class="form-text">  
+    <h1>Trabajamos con las siguientes tecnologias</h1>
+  </div>
+    <div class="tecnologias-container">
+      <div class="tecnologia">
+        <div>
+          <img src="./imagenes/as400.png" alt="">
+          <div class="tecnologia-desc">
+            <h2>AS400</h2>
+            <p>El sistema AS/400 es un equipo de IBM de gama media y alta, para todo tipo de empresas y grandes departamentos. Se trata de un sistema multiusuario, con una interfaz controlada mediante menús y comandos CL intuitivos que utiliza terminales y un sistema operativo basado en objetos y bibliotecas, denominado OS/400.</p>
+          </div> 
+        </div>
+      </div>
+      <div class="tecnologia">
+        <div>
+          <div>
+            <img src="./imagenes/genexus.png" alt="">
+          </div>
+          <div class="tecnologia-desc">
+            <h2>GeneXus</h2>
+            <p>GeneXus es una herramienta de desarrollo multiplataforma basada en la representación del conocimiento, ​ principalmente orientada al entorno empresarial para aplicaciones web, dispositivos móviles y aplicaciones para escritorio de Windows.</p>
+          </div>
+      </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="email" class="email">
+  <div class="container">
+    <div class="form-text">
+      <h1>¿Querés optimizar los procesos y llegar a una mejor toma de decisiones?</h1>
+      <h4>Envianos tu consulta.</h4>
+    </div>
+    <form class="form" action="#">
+      <input type="text" id="name" placeholder="Nombre y apellido" required>
+      <input type="email" id="email" placeholder="Email" required>
+      <input type="text" id="phone" placeholder="Teléfono" required>
+      <textarea id="message" rows="4" placeholder="Dejanos tu consulta" col="30" rows="10"></textarea>
+      <button type="submit" onclick="sendEmail()">CONTACTANOS</button>
+
+      </h3>
+    </form>
+   
+  </div>
+</section>
+
+<footer class="footer">
+    <div class="datos-fila1">
+      <div class="datos">
+        <div class="footer-telefono">
+          <img src="./imagenes/foot-phone.png" alt=""><h1>Teléfono</h1>
+        </div>
+        <h3>54 341 424 3580</h3>
+        <div class="footer-email">
+          <img src="./imagenes/foot-email.png" alt=""><h1>Email</h1>
+        </div>
+        <h3>cmg@cmgsoft.com.ar</h3>
+      </div>
+      <div>
+        <iframe class="mapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3348.013779570002!2d-60.640581999999995!3d-32.9506456!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95b7ab109b219eb1%3A0xdeaac572bea2637d!2sMitre%201151%2C%20S2000COW%20Rosario%2C%20Santa%20Fe!5e0!3m2!1ses-419!2sar!4v1677072047737!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </div>
+    <div>
+      <h5>Diseño y desarrollo por Martin Cacciurri</h5>
+    </div>  
+</footer>
+
+
+<script src="https://smtpjs.com/v3/smtp.js"></script>
+<script src="script.js"></script>
+<script>
+  function sendEmail(e){
+  console.log("Entro a enviar email")
+  e.preventDefault();
+  const name = document.querySelector('.name');
+  const email = document.querySelector('.email');
+  const phone = document.querySelector('.phone');
+  const message = document.querySelector('.message');
+  Email.send({
+  SecureToken : "02e8a72e-d687-4c2d-ba69-1616f2c89cc5",
+  To : 'martinpayron@gmail.com',
+  From : email.value,
+  Subject : "Consulta desde sitio web",
+  Body : "De: " + name.value + " Telefono: "+ phone.value + " Mensaje: " + message.value
+  }).then(
+  message => alert(message)
+  );
+}
+</script>
+
+</body>
+</html>

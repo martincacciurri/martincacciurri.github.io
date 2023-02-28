@@ -1,0 +1,732 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@900&display=swap');
+
+:root {
+  --background: #fff;
+}
+
+*, *::before, *::after {
+  margin:0;
+  padding: 0;
+  box-sizing: border-box;
+  
+}
+
+body {
+	margin: 0;
+	font-family: 'Inter', 'Work Sans', sans-serif;
+	font-weight: 400;
+  width: 100%;
+}
+
+section{
+  margin:0;
+  top:63px;
+}
+
+/* .content {
+  height: 100vh;
+  background-image: url('./imagenes/section1amobile.png');
+  background-repeat: no-repeat;
+  background-color: #fff;
+  background-blend-mode: multiply;
+  background-size: cover;
+  display: grid;
+  place-items: center;
+  z-index: 1;
+} */
+
+.banner{
+  z-index: 500;
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  /* height: calc(60vh - 70px); */
+  background-color: #f5f5f5;
+  background-size: cover;
+  background-position: center;
+  transition: all .3000ms ease-in-out;
+  background-image: url('./imagenes/w1.jpg');
+  animation: banner 15s infinite linear; 
+  display: flex;
+  flex-wrap: wrap;
+  /* animation:banner;
+  animation-duration: 4s;
+  animation-delay: 2s; */
+}
+
+.banner-contenido{
+  margin:0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  color:#FFF;
+  background-color: rgba(0,39, 90, 0.6);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.banner-contenido h1{
+  margin:0px 0px 10px 0px;
+  padding: 0;
+  font-size: 60px;
+  text-align: center;
+}
+
+.banner-contenido h2{
+  margin:0;
+  padding: 0;
+  font-size: 30px;
+  font-weight: 300;
+  text-align: center;
+}
+
+/* .banner-contenido a{
+  text-decoration: none;
+  color:#FFF;
+  padding: 9px 20px;
+  border: 1px solid #FFF;
+  text-transform: uppercase;
+  transition: all .3s ease-in-out;
+  border-radius:8px;
+  font-weight: 700;
+  margin-top:50px;
+} */
+
+.banner-contenido a:hover{
+  background-color: #FFF;
+  color:#2C82C0;
+  
+}
+
+.content h1{
+  position: absolute;
+  top: 6em;
+  margin: 0;
+  padding: 0;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.content span{
+  color:#2C82C0;
+}
+
+.content img{
+  width: 100%;
+  position: absolute;
+  top:0;
+  margin:0;
+  padding:0;
+}
+
+.img-celular-pc{
+  background-image: url('./imagenes/w1.jpg');
+  background-repeat: no-repeat;
+  background-color: #fff;
+  background-blend-mode: multiply;
+  background-size: cover;
+  display: grid;
+  place-items: center;
+  z-index: 3;
+}
+
+.about-us{
+  margin:auto;
+  background-color: #f4f4f4;
+  width: 100%;
+}
+
+.container{
+  padding:10px;
+}
+
+.about-us-img{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding:30px;
+}
+
+.about-us-text{
+  margin:3rem;
+}
+
+.about-us-text p{
+  left:30px;
+}
+
+
+/* SECTION SERVICIOS*/
+.servicios{
+  margin:0;
+  background-color: #2C82C0;
+  padding-bottom: 30px;
+  padding:120px 0px;
+}
+
+.clientes h1, .servicios h1{
+  font-size: 36px;
+}
+
+.tecnologias h1{
+  /* padding: 36px 0px 36px 36px; */
+  font-size:36px;
+}
+
+.email h1 {
+  font-size: 30px;
+}
+
+.servicios h1, .email h1, .clientes h1{
+  color:white;
+}
+
+.servicios h1,.clientes h1 {
+  font-size: 34px;
+  padding:0px 0px 20px 35px;
+}
+
+
+.about-us h1, .tecnologias h1{
+  font-size: 34px;
+  color:black;
+  padding-bottom:30px;
+}
+
+.about-us p {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 140%;
+  color:#474747
+}
+
+
+
+
+.tarjetas-container{
+  display: grid;
+  place-items: center;  
+  margin:20px;
+}
+
+.tarjeta{
+  /* max-width: 600px; */
+  /* height: 180px; */
+  background-color: white;
+  border-radius: 10px;
+  margin:10px 15px;
+  box-shadow:  2px 2px 3px rgb(0 0 0 / 10%);
+  overflow: hidden;
+}
+
+.tarjeta span{
+  display: flex;
+  align-items: center;
+  padding:10px 25px 10px 30px;
+}
+
+.tarjeta-img{
+  transform: scale(0.8);
+}
+
+.tarjeta p{
+  padding:10px 25px 20px 30px;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 140%;
+  color:#474747
+}
+
+/* SECTION CLIENTES*/
+.clientes{
+  margin:0;
+  height: 100%;
+  background-color:#2C82C0 ;
+  padding:120px 0px;
+}
+
+
+.carrusel{
+  margin:20px auto;
+  max-width:1106px;
+}
+
+.carrusel-items{
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(200px, 1fr));
+
+  /* display: flex;
+  overflow-x:hidden; 
+  padding: 50px 0px;; */
+
+} 
+
+.carrusel-item{
+  margin:0;
+  display: grid;
+  place-items: center;
+  padding-bottom: 10px;
+}
+
+.carrusel-item:hover{
+  transform: scale(0.8);
+}
+
+.carrusel-item img{
+  width: 175px;
+}
+
+.tecnologias{
+  background-color: #f4f4f4;
+}
+
+
+
+.tecnologia{
+  display: grid;
+  
+}
+.tecnologia img{
+  transform: scale(0.5);
+  width: 100%;
+}
+
+.tecnologias p{
+  font-size: 18px;
+}
+
+.tecnologia-desc{
+  margin:50px;
+ 
+}
+
+.tecnologia-desc p{
+  font-weight: 400;
+  line-height: 1.3rem;
+  color:#474747
+}
+
+
+
+.email{
+  margin:0;
+  height: 100%;
+  background-color:#00275A;
+}
+
+.contacto{
+  margin:0;
+  height: 50vh;
+  background-color: white;
+}
+
+.form-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.form-text{
+  padding:0px 60px 100px 0px;
+  color:white;
+}
+
+.form-text h1{
+  font-size:36px;
+}
+
+.form-text h4{
+  font-weight: 300;
+  padding-top: 30px;
+}
+
+form{
+  display: flex;
+  flex-direction: column;
+  /* padding: 5vw 4vw; */
+  padding: 50px;
+  width: 100%;
+  border-radius: 10px;
+}
+
+form h1{
+  color:#fff;
+  margin-bottom: 20px;
+}
+
+form input, form textarea{
+  border:0;
+  border-radius: 10px;
+  margin:10px 0;
+  padding: 20px;
+  outline: none;
+  background-color: #f2f2f2;
+  font-size: 18px;
+  font-family: 'Inter';
+  max-width: 100%;
+}
+
+form button, .banner-link{
+  text-decoration: none;
+  position: relative;
+  padding: 15px;
+  background-color: #2C82C0;
+  color:white;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1rem;
+  border: 0;
+  border-radius: 8px;
+  outline: none;
+  cursor:pointer;
+  margin:1.8rem auto 0;
+  width: 11.25rem;
+  display: inline-block;
+  box-shadow:  2px 2px 3px rgb(0 0 0 / 10%);
+}
+
+.footer{
+  background-color: #222;
+  color:#8e8989;
+  margin:auto;
+  display: grid;
+  place-items: center;
+  justify-content: center;
+
+}
+
+.footer-telefono, .footer-email{
+  display: flex;
+  align-items: center;
+  gap:10px;
+  padding: 10px 0px 10px 0px;
+}
+
+.mapa{
+  max-width: 580px;
+  height: 270px;  
+  margin: 30px 33px;
+}
+
+.footer h1, h3{
+  width: 400px;
+  font-weight: 300;
+}
+
+.footer h1{
+  font-size: 18px;
+}
+
+.footer h5{
+  padding: 15px;
+  font-weight: 300;
+  margin:20px;
+}
+
+.datos{
+  margin: 30px 33px;
+}
+
+/* navigation styles start here */
+
+
+
+
+header {
+  background: var(--background);
+  text-align: center;
+  position: fixed;
+  z-index: 999;
+  width: 100%;
+}
+
+/* changed this from the tutorial video to
+   allow it to gain focus, making it tabbable */
+.nav-toggle {
+  position: absolute !important;
+  top: -9999px !important;
+  left: -9999px !important;
+}
+
+.nav-toggle:focus ~ .nav-toggle-label {
+  outline: 3px solid rgba(lightblue, .75);
+}
+
+.nav-toggle-label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin-left: 1em;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.nav-toggle-label span,
+.nav-toggle-label span::before,
+.nav-toggle-label span::after {
+  display: block;
+  background: black;
+  height: 2px;
+  width: 2em;
+  border-radius: 2px;
+  position: relative;
+}
+
+.nav-toggle-label span::before,
+.nav-toggle-label span::after {
+  content: '';
+  position: absolute;
+}
+
+.nav-toggle-label span::before {
+  bottom: 7px;
+}
+
+.nav-toggle-label span::after {
+  top: 7px;
+}
+
+nav {
+  position: absolute;
+  text-align: left;
+  top: 100%;
+  left: 0;
+  background: var(--background);
+  width: 100%;
+  transform: scale(1, 0);
+  transform-origin: top;
+  transition: transform 400ms ease-in-out;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+nav li {
+  margin-bottom: 1em;
+  margin-left: 1em;
+}
+
+nav a {
+  color: black;
+  text-decoration: none;
+  font-size:16px;
+  opacity: 0;
+  transition: opacity 150ms ease-in-out;
+}
+
+nav a:hover {
+  color: #2C82C0;
+}
+
+.nav-toggle:checked ~ nav {
+  transform: scale(1,1);
+}
+
+.nav-toggle:checked ~ nav a {
+  opacity: 1;
+  transition: opacity 250ms ease-in-out 250ms;
+}
+
+
+
+@media screen and (min-width: 800px) {
+
+  section{
+    top:90px;
+  }
+
+  .content{
+    background-image: url('imagenes/w1.jpg');
+  }
+
+  .content h1{
+    font-size: 34px;
+  }
+
+  .nav-toggle-label {
+    display: none;
+  }
+
+  header {
+    max-height: 90px;
+    display: grid;
+    grid-template-columns: 1fr auto minmax(600px, 3fr) 1fr;
+  }
+  
+  .logo {
+    margin:15px;
+    grid-column: 2 / 3;
+  }
+  
+  nav {
+    all: unset; /* this causes issues with Edge, since it's unsupported */
+    
+    /* the following lines are not from my video, but add Edge support */
+    position: relative;
+    text-align: left;
+    transition: none;
+    transform: scale(1,1);
+    background: none;
+    top: initial;
+    left: initial;
+    /* end Edge support stuff */
+    
+    grid-column: 3 / 4;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  
+  nav ul {
+    display: flex;
+  }
+  
+  nav li {
+    margin-left: 3em;
+    margin-bottom: 0;
+  }
+  
+  nav a {
+    opacity: 1;
+    position: relative;
+  }
+  
+  nav a::before {
+    content: '';
+    display: block;
+    height: 5px;
+    background: #2C82C0;
+    position: absolute;
+    bottom: -.75em;
+    left: 0;
+    right: 0;
+    transform: scale(0, 1);
+    transition: transform ease-in-out 250ms;
+  }
+  
+  nav a:hover::before {
+    transform: scale(1,1);
+  }
+
+  .clientes .container{
+    display: inline-block;
+  }
+
+  .tarjetas-container{
+    display: flex;
+    justify-content: center;
+  }
+
+  .tarjeta{
+    max-width: 350px;
+    height: 300px;
+    padding-top:20px;
+  }
+
+  .container{
+    max-width: 70rem;
+    margin:0 auto;
+    padding:0 1rem;
+    display: flex;
+    align-items: center;
+  }
+
+  .titulo{
+    margin:auto;
+    max-width: 1106px;
+    padding:0px 0px 20px 3px;
+  }
+  .about-us p {
+    font-size: 18px;
+  }
+
+  .about-us img{
+    width: 400px;
+    margin:50px;
+    border-radius:8px;
+    box-shadow: 2px 2px 3px rgb(0 0 0 / 10%);
+  }
+
+  .email, .tecnologias{
+    padding:120px;
+  }
+
+  .carrusel-item:hover{
+    transform: scale(1.2);
+  }
+
+  .form-imagen{
+    display: inline;
+  }
+
+  .datos-fila1{
+    display: flex;
+  }
+
+  .mapa{
+    height: 250px;
+  }
+
+  .tecnologia img{
+    width: 100%;
+    transform: scale(1);
+    margin:20px 20px 5px 20px;
+  }
+
+  .tecnologia{
+    width: 300px;
+    min-height: 450px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow:  2px 2px 3px rgb(0 0 0 / 10%);
+  }
+
+  .tecnologias-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:30px;
+  }
+
+  .tecnologia-desc{
+    margin:5px 20px 20px 20px;
+  }
+
+  /* .tecnologias{
+    padding:120px 0px;
+  } */
+
+  .tecnologias h1{
+    font-size:38px;
+  }
+}
+
+@keyframes banner {
+  0%{
+      background-image: url('imagenes/w1.jpg');
+  }
+  25%{
+      background-image: url('imagenes/w2.jpg');
+  }
+  50%{
+      background-image: url('imagenes/w4.jpg');
+  }
+  75%{
+      background-image: url('imagenes/w5.jpg');
+  }
+  100%{
+      background-image: url('imagenes/w6.jpg');
+  }
+ 
+}
