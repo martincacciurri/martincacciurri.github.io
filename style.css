@@ -151,7 +151,11 @@ section{
   display: flex;
   align-items: center;
   justify-content: center;
-  padding:30px;
+  padding:30px;  
+}
+
+.about-us-img img{
+  scale:0.6;
 }
 
 .about-us-text{
@@ -249,7 +253,7 @@ section{
   margin:0;
   height: 100%;
   background-color:#2C82C0 ;
-  padding:120px 0px;
+  padding:80px 0px;
 }
 
 
@@ -260,7 +264,7 @@ section{
 
 .carrusel-items{
   display: grid;
-  grid-template-columns: repeat(auto-fit,minmax(200px, 1fr));
+  grid-template-columns: repeat(auto-fit,minmax(180px, 1fr));
 
   /* display: flex;
   overflow-x:hidden; 
@@ -334,7 +338,7 @@ section{
 }
 
 .form-text{
-  padding:0px 60px 100px 0px;
+  padding:50px 50px 0px;
   color:white;
 }
 
@@ -410,13 +414,13 @@ form button, .banner-link{
 }
 
 .mapa{
-  max-width: 580px;
+  max-width: 298px;
   height: 270px;  
   margin: 30px 33px;
 }
 
 .footer h1, h3{
-  width: 400px;
+  /* width: 400px; */
   font-weight: 300;
 }
 
